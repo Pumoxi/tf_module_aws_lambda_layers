@@ -47,6 +47,8 @@ terraform init
 terraform apply
 ```
 
+This command will deploy an AWS Lambda layer named custom_python_layer with lxml installed, compatible with Python 3.8 and 3.9.
+
 ## Notes
 
 - **Local Dependency Installation**: Dependencies are installed locally using `pip` and packaged into a ZIP archive. Ensure `pip` is installed and available in your environment.
