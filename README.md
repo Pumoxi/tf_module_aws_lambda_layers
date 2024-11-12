@@ -23,7 +23,7 @@ module "lambda_layer" {
 }
 
 output "lambda_layer_arn" {
-  value = module.lambda_layer.layer_arn
+  value = module.lambda_layer.lambda_layer_arn
 }
 ```
 
@@ -37,6 +37,15 @@ output "lambda_layer_arn" {
 1. **Initialize Terraform**: Run `terraform init` to set up the module and download providers.
 2. **Apply the Configuration**: Run `terraform apply` to install libraries, package the layer, and deploy it to AWS.
 3. **Use the Layer ARN**: Use the outputted `layer_arn` in your Lambda functions to include the deployed layer.
+
+## Example
+
+To deploy this module with default settings, run:
+
+```bash
+terraform init
+terraform apply
+```
 
 ## Notes
 
