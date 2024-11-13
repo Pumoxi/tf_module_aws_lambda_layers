@@ -14,7 +14,7 @@ To use this module, reference it in your Terraform configuration and specify the
 
 ```hcl
 module "lambda_layer" {
-  source              = "git::https://github.com/pumoxi/tf_module_aws_lambda_layers//terraform/"
+  source              = "git::https://github.com/pumoxi/tf_module_aws_lambda_layers_python//terraform/"
   layer_name          = "custom_python_layer"
   region              = "us-east-1"
   python_libraries    = ["lxml", "requests"]
